@@ -19,7 +19,7 @@ function calculateProfitLoss() {
         var profit = cp - bp
         var profitPercentage = profit / cp * 100
 
-        outputBox.innerText = 'Your profit is ' + profit + ' and lose percentage is ' + profitPercentage + '%'
+        outputBox.innerText = 'Your profit is ' + profit + ' and profit percentage is ' + profitPercentage + '%'
 
 
     } else {
