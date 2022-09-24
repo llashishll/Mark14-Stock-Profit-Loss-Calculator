@@ -23,7 +23,7 @@ function calculateProfitLoss() {
         outputBox.innerText = 'Your profit is ' + profit + ' and profit percentage is ' + profitPercentage + '%'
 
 
-    } else {
+    } else if (bp = cp) {
         outputBox.innerText = "There is neither loss nor profit"
     }
 
