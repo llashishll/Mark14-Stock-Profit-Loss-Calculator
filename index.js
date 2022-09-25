@@ -14,6 +14,10 @@ function calculateProfitLoss() {
 
         outputBox.innerText = "Error: All the values should be greater than zero."
 
+    } else if (bp == "" || cp == "" || qty.vale == "") {
+
+        outputBox.innerText = "Error: All 3 Fields are required"
+
     } else {
 
         if (bp > cp) {
