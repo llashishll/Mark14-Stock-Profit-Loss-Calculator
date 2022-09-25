@@ -5,15 +5,6 @@ const subBtn = document.querySelector("#sub-btn")
 const outputBox = document.querySelector("#output")
 
 
-function checkInputValues() {
-    if (bp < 0 || cp < 0 || qty.value < 0) {
-        outputBox.innerText("All the values should be greater then 0")
-
-    }
-
-
-}
-
 function calculateProfitLoss() {
 
     let bp = Number(buyingPrice.value) * Number(qty.value);
