@@ -4,27 +4,46 @@ const qty = document.querySelector("#quantity")
 const subBtn = document.querySelector("#sub-btn")
 const outputBox = document.querySelector("#output")
 
+
+function checkInputValues() {
+    if (bp < 0 || cp < 0 || qty.value < 0) {
+        outputBox.innerText("All the values should be greater then 0")
+
+    }
+
+
+}
+
 function calculateProfitLoss() {
 
     let bp = Number(buyingPrice.value) * Number(qty.value);
     let cp = Number(currentPrice.value) * Number(qty.value);
 
-    if (bp > cp) {
+    if (bp < 0 || cp < 0 || qty.value < 0) {
 
-        var loss = (bp - cp)
-        var lossPercentage = (loss / bp) * 100
+        outputBox.innerText = "Error: All the values should be greater than zero."
 
-        outputBox.innerText = 'Your loss is ' + loss + ' and lose percentage is ' + lossPercentage + '%'
-    } else if (bp < cp) {
+    } else {
 
-        var profit = (cp - bp)
-        var profitPercentage = (profit / bp) * 100
+        if (bp > cp) {
 
-        outputBox.innerText = 'Your profit is ' + profit + ' and profit percentage is ' + profitPercentage + '%'
+            var loss = (bp - cp)
+            var lossPercentage = (loss / bp) * 100
 
 
-    } else if (bp = cp) {
-        outputBox.innerText = "There is neither loss nor profit"
+            outputBox.innerText = 'Your loss is ' + loss + ' and lose percentage is ' + lossPercentage + '%'
+        } else if (bp < cp) {
+
+            var profit = (cp - bp)
+            var profitPercentage = (profit / bp) * 100
+
+            outputBox.innerText = 'Your profit is ' + profit + ' and profit percentage is ' + profitPercentage + '%'
+
+
+        } else if (bp = cp) {
+            outputBox.innerText = "There is neither loss nor profit"
+
+        }
     }
 
 }
