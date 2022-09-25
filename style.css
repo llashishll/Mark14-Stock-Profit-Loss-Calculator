@@ -1,3 +1,8 @@
+body{
+    background-color:beige
+
+}
+
 .container{
 display: flex;
 flex-direction: column;
@@ -12,7 +17,7 @@ padding:1rem ;
 }
 
 .items{
-    font-size: large;
+    font-size:x-large;
     color:brown;
     margin:0.5rem;
     text-align: center;
