@@ -26,13 +26,13 @@ function calculateProfitLoss() {
             var lossPercentage = (loss / bp) * 100
 
 
-            outputBox.innerText = 'Your loss is ' + loss + ' and lose percentage is ' + lossPercentage + '%'
+            outputBox.innerText = 'Your loss is ' + loss.toFixed(2) + ' and lose percentage is ' + lossPercentage.toFixed(2) + '%'
         } else if (bp < cp) {
 
             var profit = (cp - bp)
             var profitPercentage = (profit / bp) * 100
 
-            outputBox.innerText = 'Your profit is ' + profit + ' and profit percentage is ' + profitPercentage + '%'
+            outputBox.innerText = 'Your profit is ' + profit.toFixed(2) + ' and profit percentage is ' + profitPercentage.toFixed(2) + '%'
 
 
         } else if (bp = cp) {
