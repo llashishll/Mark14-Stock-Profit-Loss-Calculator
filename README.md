@@ -1,6 +1,6 @@
 # Mark14-Stock-Profit-Loss-Calculator
 
-An online application that shows your stock current profit/loss. It takes 3 inputs namely: 
+An online application that shows your stock current profit/loss. It is build with HTML,CSS and JavaScript. It takes 3 inputs namely: 
 
 1.Buying Amount : Price at which stock was purchased.
 2.Current Amount : Present price of the stock.
